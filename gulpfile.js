@@ -67,12 +67,7 @@ function modules() {
       '!./node_modules/jquery/dist/core.js'
     ])
     .pipe(gulp.dest('./vendor/jquery'));
-  // Simple Line Icons
-  var simpleLineIconsFonts = gulp.src('./node_modules/simple-line-icons/fonts/**')
-    .pipe(gulp.dest('./vendor/simple-line-icons/fonts'));
-  var simpleLineIconsCSS = gulp.src('./node_modules/simple-line-icons/css/**')
-    .pipe(gulp.dest('./vendor/simple-line-icons/css'));
-  return merge(bootstrap, fontAwesomeCSS, fontAwesomeWebfonts, jquery, jqueryEasing, simpleLineIconsFonts, simpleLineIconsCSS);
+  return merge(bootstrap, fontAwesomeCSS, fontAwesomeWebfonts, jquery, jqueryEasing);
 }
 
 // CSS task
@@ -105,7 +100,9 @@ function js() {
   return gulp
     .src([
       './js/*.js',
-      '!./js/*.min.js'
+      '!./js/*.min.js',
+      '!./js/contact_me.js',
+      '!./js/jqBootstrapValidation.js'
     ])
     .pipe(uglify())
     .pipe(header(banner, {
@@ -121,7 +118,7 @@ function js() {
 // Watch files
 function watchFiles() {
   gulp.watch("./scss/**/*", css);
-  gulp.watch("./js/**/*", js);
+  gulp.watch(["./js/**/*", "!./js/**/*.min.js"], js);
   gulp.watch("./**/*.html", browserSyncReload);
 }
 
