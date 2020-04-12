@@ -395,6 +395,11 @@ header.masthead .intro-text .intro-heading {
     margin-bottom: 30px
 }
 
+.portfolio-modal .modal-content img.team {
+    border-radius: 10px 0px;
+    /* width: 450px; */
+}
+
 .portfolio-modal .modal-content button {
     cursor: pointer
 }
