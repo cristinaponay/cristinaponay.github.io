@@ -50,9 +50,20 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Droid Serif', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'
 }
 
+
 @media (min-width:768px) {
     section {
         padding: 150px 0
+    }
+
+    .avatar {
+        vertical-align: middle;
+        clip-path: circle(50px at center);
+    }
+
+    li.list-group-item {
+        justify-content: space-between!important;
+        display: flex!important;
     }
 }
 
@@ -126,7 +137,8 @@ img::-moz-selection {
 }
 
 #mainNav .navbar-brand.active, #mainNav .navbar-brand:active, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
-    color: #ac192f
+    color: #e45258;
+    text-shadow: 1px 1px #fff;
 }
 
 #mainNav .navbar-nav .nav-item .nav-link {
@@ -152,7 +164,7 @@ img::-moz-selection {
         background-color: #ebe1d880;
     }
     #mainNav .navbar-brand {
-        font-size: 1.75em;
+        font-size: 1.85em;
         transition: all .3s
     }
     #mainNav .navbar-nav .nav-item .nav-link {
@@ -165,8 +177,13 @@ img::-moz-selection {
         background-color: #ebe1d89a;
     }
     #mainNav.navbar-shrink .navbar-brand {
-        font-size: 1.25em;
+        font-size: 1.50em;
         padding: 12px 0
+    }
+
+    .avatar {
+        vertical-align: middle;
+        clip-path: circle(100px at center);
     }
 }
 
@@ -224,6 +241,11 @@ header.masthead .intro-text .intro-heading {
         margin-bottom: 50px;
         font-family: 'Kristi', cursive;
     }
+
+    li.list-group-item {
+        justify-content: space-between!important;
+        display: flex!important;
+    }
 }
 
 .service-heading {
@@ -237,15 +259,7 @@ header.masthead .intro-text .intro-heading {
 .avatar {
     vertical-align: middle;
     clip-path: circle(100px at center);
-    /* background-color: #e45258; */
 }
-
-/* #contact i {
-    border-radius: 50%;
-    background-color: #4b4244;
-    padding: 10px;
-    color: #ced4da;
-} */
 
 .list-group {
     font-family: 'Montserrat', sans-serif;
@@ -333,6 +347,16 @@ header.masthead .intro-text .intro-heading {
 @media (min-width:767px) {
     #portfolio .portfolio-item {
         margin: 0 0 30px
+    }
+
+    li.list-group-item {
+        justify-content: space-between!important;
+        display: flex!important;
+    }
+
+    .avatar {
+        vertical-align: middle;
+        clip-path: circle(50px at center);
     }
 }
 
@@ -468,10 +492,11 @@ header.masthead .intro-text .intro-heading {
     height: 80px;
     margin-left: 0;
     text-align: center;
-    color: #fff;
+    color: #e45258;
     border: 7px solid #e9ecef;
     border-radius: 100%;
-    background-color: #e45258
+    background-color: #fff;
+    /* background-color: #e45258 */
 }
 
 .timeline>li .timeline-image h4 {
@@ -552,6 +577,11 @@ header.masthead .intro-text .intro-heading {
         padding: 0 30px 20px 20px;
         text-align: left
     }
+
+    li.list-group-item {
+        justify-content: space-between!important;
+        display: flex!important;
+    }
 }
 
 @media (min-width:992px) {
@@ -573,6 +603,11 @@ header.masthead .intro-text .intro-heading {
     }
     .timeline>li.timeline-inverted>.timeline-panel {
         padding: 0 20px 20px
+    }
+
+    .avatar {
+        vertical-align: middle;
+        clip-path: circle(80px at center);
     }
 }
 
