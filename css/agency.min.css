@@ -396,7 +396,7 @@ header.masthead .intro-text .intro-heading {
 }
 
 .portfolio-modal .modal-content img.team {
-    border-radius: 10px 0px;
+    border-radius: 0px 10px;
     /* width: 450px; */
 }
 
